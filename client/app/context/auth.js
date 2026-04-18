@@ -87,14 +87,14 @@ export const AuthProvider = ({ children }) => {
     }
   };
 
-  if (loading) {
-    // Centered loading spinner component
-    return (
-      <div className="fixed inset-0 flex items-center justify-center bg-white bg-opacity-80 z-50">
-        <div className="w-12 h-12 rounded-full border-4 border-gray-200 border-t-stone-900 animate-spin"></div>
-      </div>
-    );
-  }
+  // if (loading) {
+  //   // Centered loading spinner component
+  //   return (
+  //     <div className="fixed inset-0 flex items-center justify-center bg-white bg-opacity-80 z-50">
+  //       <div className="w-12 h-12 rounded-full border-4 border-gray-200 border-t-stone-900 animate-spin"></div>
+  //     </div>
+  //   );
+  // }
 
   return (
     <AuthContext.Provider value={[auth, setAuth, { login, logout }]}>
