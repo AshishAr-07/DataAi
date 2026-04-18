@@ -23,7 +23,7 @@ export default function AiInsights({ filtered }) {
     return (
         <div>
             {isLoading && (
-                <div className='animate-spin rounded-full p-4 h-32' />
+                <></>
             )}
 
             <button
