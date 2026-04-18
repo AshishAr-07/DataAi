@@ -45,7 +45,7 @@ export default function Dashboard() {
     formData.append("file", file);
     try {
       const response = await axios.post(
-        "http://localhost:4000/api/v1/upload",
+        `${process.env.NEXT_PUBLIC_API_URL}/upload`,
         formData,
       );
       const parsed = response.data;
